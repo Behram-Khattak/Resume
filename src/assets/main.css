@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Raleway&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --red: #DC3545;
+    --yellow: #ffc700;
+    --green: #00ff00;
+    --white: #fdfdfd;
+    --black: #191624;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
+}
+
+/*--- header & navbar starts ---*/
+.active {
+    color: var(--red) !important;
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.logo > a {
+    color: var(--red);
+}
+
+.desktop_menus > li > a > strong:hover {
+    color: var(--red);
+}
+/*--- header & navbar ends ---*/
+
+/*--- main body starts ---*/
+main {
+    color: var(--white);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Who Am I Section starts */
+
+.WhoAmI {
+    background-color: var(--black);
+}
+
+.WhoAmI h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.WhoAmI h2{
+    font-size: 2.5rem;
+}
+
+.WhoAmI h1 > span{
+    color: var(--red);
+}
+
+.caption > small {
+    font-size: 1.3rem;
+}
+
+.social-links > ul > li > a > svg {
+    color: var(--red);
+}
+/* Who Am I Section ends */
+
+/* About Me Section starts */
+
+.AboutMe {
+    background-color: var(--red);
+}
+
+.vs-code {
+    background-color: var(--black);
+}
+
+.mac-toolbar > .sphere {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.mac-toolbar > .sphere:first-child {
+    background-color: var(--red);
+}
+
+.mac-toolbar > .sphere:nth-child(2) {
+    background-color: var(--yellow);
+}
+
+.mac-toolbar > .sphere:last-child {
+    background-color: var(--green);
+}
+
+.approach-me-btn {
+    border: 2px solid var(--red);
+}
+
+.approach-me-btn:hover {
+    background-color: var(--red);
+}
+/* About Me Section ends */
+
+/* My Journey Section starts */
+.MyJourney {
+    background-color: var(--black);
+}
+
+.timeline-vertical-bar {
+    background-color: var(--red);
+}
+/* My Journey Section ends */
+
+
+/* My Arts Section starts */
+
+.MyArts {
+    background-color: var(--black);
+}
+
+.arts-item {
+    border: 1px solid var(--red);
+}
+
+.arts-title {
+    color: var(--red) !important;
+}
+
+.arts-keywords > small {
+    background-color: var(--white);
+    color: var(--black);
+}
+/* My Arts Section ends */
+
+/* Approach Me Section starts */
+.ApproachMe {
+    background-color: var(--red);
+}
+
+.approach-me-icons {
+    color: var(--black);
+}
+/* Approach Me Section ends */
+
+footer {
+    background-color: var(--black);
+}
+
+.name-and-designation > h2 {
+    color: var(--red);
+}
+
+.name-and-designation > span {
+    color: var(--white);
+}
+
+.copy-right {
+    color: var(--white);
+}
+
+/*--- main body ends ---*/
+
+/*--- @media queries ---*/
+
+/* kind of a container for screen sizes smaller than tailwind sm:640px */
+@media (max-width: 768px) {
+    .navigation-bar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .hamburger-menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -38.7%);
+        width: 100%;
+        height: 100%;
+        padding: 5rem 0rem;
+    }
+
+    .hamburger-menu {
+        background-color: var(--red);
+    }
+
+    .hamburger-menu > ul > li {
+        padding: 1rem 0rem;
+        text-align: center;
+        margin: 0px !important;
+        font-size: x-large;
+    }
+
+    /* hamburger */
+    .hamburger > .bar {
+        margin: 5px 0px;
+        border-radius: 10px;
+    }
+
+    .hamburger > .bar:first-child {
+        background-color: var(--white);
+        width: 40px;
+        height: 5px;
+        transition: 0.5s ease;
+    }
+
+    .hamburger > .bar:nth-child(2) {
+        background-color: var(--red);
+        width: 30px;
+        height: 5px;
+    }
+
+    .hamburger > .bar:last-child {
+        background-color: var(--red);
+        width: 20px;
+        height: 5px;
+        transition: 0.5s ease;
+    }
+    /* hamburger */
+
+    /* animate burger animation bars when clicked */
+    .animate_bar_first {
+        width: 20px !important;
+        transition: 0.5s ease;
+    }
+
+    .animate_bar_last {
+        width: 40px !important;
+        transition: 0.5s ease;
+    }
+}
+
