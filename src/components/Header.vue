@@ -1,6 +1,4 @@
 <script setup>
-import Hamburger from './Hamburger.vue';
-
     defineProps({
         // 
     });
@@ -16,7 +14,7 @@ import Hamburger from './Hamburger.vue';
             </div>
 
             <div class="nav-links">
-                <div class="hamburger cursor-pointer" @click="openHamburgerMenu">
+                <div class="hamburger cursor-pointer" @click="HamburgerMenu">
                     <div class="bar" :class="{ animate_bar_first:animate_bar_first }"></div>
                     <div class="bar"></div>
                     <div class="bar"  :class="{ animate_bar_last:animate_bar_last }"></div>
@@ -53,7 +51,37 @@ import Hamburger from './Hamburger.vue';
         </nav>
 
     </div>
-    <Hamburger :class="{ hidden:hidden }"/>
+    
+    <!-- Hamburger Mobile Menu -->
+    <div :class="{ hidden:hidden }">
+        <ul class="hamburger-menu capitalize text-5xl space-y-20 text-center lg:hidden">
+            <li @click="HamburgerMenu">
+                <a href="#whoAmI">
+                    <strong>who am i</strong>
+                </a>
+            </li>
+            <li @click="HamburgerMenu">
+                <a href="#aboutMe">
+                    <strong>about me</strong>
+                </a>
+            </li>
+            <li @click="HamburgerMenu">
+                <a href="#myJourney">
+                    <strong>my journey</strong>
+                </a>
+            </li>
+            <li @click="HamburgerMenu">
+                <a href="#myArts">
+                    <strong>my arts</strong>
+                </a>
+            </li>
+            <li @click="HamburgerMenu">
+                <a href="#approachMe">
+                    <strong>approach me</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
 
 </template>
 
@@ -71,7 +99,7 @@ import Hamburger from './Hamburger.vue';
         }),
 
         methods: {
-            openHamburgerMenu() {
+            HamburgerMenu() {
                 this.hidden = !this.hidden;
                 this.animate_bar_first = !this.animate_bar_first;
                 this.animate_bar_last = !this.animate_bar_last;
