@@ -49,8 +49,14 @@ defineProps({
     </div>
   </div>
 
-  <div class="copy-right capitalize text-center pb-5">
+  <div class="container mx-auto copy-right capitalize pb-5 flex justify-between px-8 lg:px-0">
       <span>&COPY; behram 2023</span>
+
+      <div class="jump-to-top">
+        <a href="#whoAmI" class="text-white">
+          jump
+        </a>
+      </div>
   </div>
 </template>
 

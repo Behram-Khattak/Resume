@@ -6,7 +6,7 @@
 
 <template>
     <div class="container mx-auto navigation-bar">
-        <nav class="navbar flex justify-between items-center py-5 capitalize">
+        <nav class="navbar flex justify-between items-center py-2 capitalize">
             <div class="logo">
                 <a href="">
                     <h1 class="font-extrabold text-5xl">behram</h1>
@@ -89,14 +89,13 @@
     export default {
 
         data() {
-          return { active: null }
-        },
-
-        data: () => ({
+          return {
+            active: null,
             hidden: true,
             animate_bar_first: false,
             animate_bar_last: false,
-        }),
+           }
+        },
 
         methods: {
             HamburgerMenu() {

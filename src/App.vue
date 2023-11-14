@@ -14,15 +14,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
+  <header class="fixed top-0 left-0 right-0 z-50">
       <Header />
-    </div>
   </header>
 
   <main>
     <section class="WhoAmI">
-      <div class="container mx-auto flex flex-col items-center py-16" id="whoAmI">
+      <div class="container mx-auto flex flex-col items-center py-20" id="whoAmI">
         <div class="title capitalize space-y-5 text-center">
           <h2>hi, i'am</h2>
           <h1>a full stack <span>web engineer</span></h1>
