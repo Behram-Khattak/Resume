@@ -171,6 +171,14 @@ footer {
     color: var(--white);
 }
 
+.jump-to-top > a {
+    color: var(--white);
+    border: 2px solid var(--red);
+}
+
+.jump-to-top > a:hover {
+    background-color: var(--red);
+}
 /*--- main body ends ---*/
 
 /*--- @media queries ---*/

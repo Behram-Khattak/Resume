@@ -53,8 +53,8 @@ defineProps({
       <span>&COPY; behram 2023</span>
 
       <div class="jump-to-top">
-        <a href="#whoAmI" class="text-white">
-          jump
+        <a href="#whoAmI" class="py-2 px-3 rounded-full">
+          <font-awesome-icon icon="fas fa-arrow-up" size="lg" />
         </a>
       </div>
   </div>
