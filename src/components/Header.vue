@@ -1,108 +1,61 @@
 <script setup>
-    defineProps({
-        // 
-    });
+defineProps({
+  //
+});
 </script>
 
 <template>
-    <div class="container mx-auto navigation-bar">
-        <nav class="navbar flex justify-between items-center py-2 capitalize">
-            <div class="logo">
-                <a href="">
-                    <h1 class="font-extrabold text-5xl">behram</h1>
-                </a>
-            </div>
-
-            <div class="nav-links">
-                <div class="hamburger cursor-pointer" @click="HamburgerMenu">
-                    <div class="bar" :class="{ animate_bar_first:animate_bar_first }"></div>
-                    <div class="bar"></div>
-                    <div class="bar"  :class="{ animate_bar_last:animate_bar_last }"></div>
-                </div>
-
-                <ul class="lg:flex space-x-10 hidden desktop_menus">
-                    <li @click="active = 'WhoAmI'">
-                        <a href="#whoAmI">
-                            <strong  :class="{active:active === 'WhoAmI'}">who am i</strong>
-                        </a>
-                    </li>
-                    <li @click="active = 'aboutMe'">
-                        <a href="#aboutMe">
-                            <strong :class="{active:active === 'aboutMe'}">about me</strong>
-                        </a>
-                    </li>
-                    <li @click="active = 'myJourney'">
-                        <a href="#myJourney">
-                            <strong :class="{active:active === 'myJourney'}">my journey</strong>
-                        </a>
-                    </li>
-                    <li @click="active = 'myArts'">
-                        <a href="#myArts">
-                            <strong :class="{active:active === 'myArts'}">my arts</strong>
-                        </a>
-                    </li>
-                    <li @click="active = 'approachMe'">
-                        <a href="#approachMe">
-                            <strong :class="{active:active === 'approachMe'}">approach me</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-    </div>
-    
-    <!-- Hamburger Mobile Menu -->
-    <div :class="{ hidden:hidden }">
-        <ul class="hamburger-menu capitalize text-5xl space-y-20 text-center lg:hidden">
-            <li @click="HamburgerMenu">
-                <a href="#whoAmI">
-                    <strong>who am i</strong>
-                </a>
-            </li>
-            <li @click="HamburgerMenu">
-                <a href="#aboutMe">
-                    <strong>about me</strong>
-                </a>
-            </li>
-            <li @click="HamburgerMenu">
-                <a href="#myJourney">
-                    <strong>my journey</strong>
-                </a>
-            </li>
-            <li @click="HamburgerMenu">
-                <a href="#myArts">
-                    <strong>my arts</strong>
-                </a>
-            </li>
-            <li @click="HamburgerMenu">
-                <a href="#approachMe">
-                    <strong>approach me</strong>
-                </a>
-            </li>
-        </ul>
-    </div>
-
+  <div class="grid max-w-screen-lg p-4 mx-auto bg-transparent place-items-end">
+    <button
+      id="theme-toggle"
+      type="button"
+      class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+    >
+      <svg
+        id="theme-toggle-dark-icon"
+        class="hidden w-10 h-10"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+        ></path>
+      </svg>
+      <svg
+        id="theme-toggle-light-icon"
+        class="hidden w-10 h-10"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </template>
 
 <script>
-    export default {
+export default {
+//   data() {
+//     //   return {
+//     //     active: null,
+//     //     hidden: true,
+//     //     animate_bar_first: false,
+//     //     animate_bar_last: false,
+//     //    }
+//   },
 
-        data() {
-          return {
-            active: null,
-            hidden: true,
-            animate_bar_first: false,
-            animate_bar_last: false,
-           }
-        },
-
-        methods: {
-            HamburgerMenu() {
-                this.hidden = !this.hidden;
-                this.animate_bar_first = !this.animate_bar_first;
-                this.animate_bar_last = !this.animate_bar_last;
-            }
-        },
-    }
+//   methods: {
+//     // HamburgerMenu() {
+//     //     this.hidden = !this.hidden;
+//     //     this.animate_bar_first = !this.animate_bar_first;
+//     //     this.animate_bar_last = !this.animate_bar_last;
+//     // }
+//   },
+};
 </script>

@@ -5,12 +5,9 @@
 @tailwind utilities;
 
 :root {
-    --red: #DC3545;
-    --yellow: #ffc700;
-    --green: #00ff00;
     --white: #fdfdfd;
-    --black: #191624;
-    --navbar-black: #191624bf;
+    --dark: #121621;
+    --text: #6b7280;
   }
 
 * {
@@ -18,6 +15,11 @@
     padding: 0;
     font-family: 'Fira Code', monospace;
     scroll-behavior: smooth;
+    background-color: var(--dark);
+}
+
+p {
+    color: var(--text);
 }
 
 /*--- header & navbar starts ---*/
@@ -45,15 +47,12 @@ main {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
     font-weight: bold;
 }
 
 /* Who Am I Section starts */
-
-.WhoAmI {
-    background-color: var(--black);
-}
 
 .WhoAmI h1{
     font-size: 3rem;
@@ -79,8 +78,8 @@ main {
 
 /* About Me Section starts */
 
-.AboutMe {
-    background-color: var(--red);
+.AboutMe .section-title > h1{
+    color: var(--red);
 }
 
 .vs-code {
@@ -115,8 +114,9 @@ main {
 /* About Me Section ends */
 
 /* My Journey Section starts */
-.MyJourney {
-    background-color: var(--black);
+
+.MyJourney .section-title > h1 {
+    color: var(--red);
 }
 
 .timeline-vertical-bar {
@@ -126,10 +126,6 @@ main {
 
 
 /* My Arts Section starts */
-
-.MyArts {
-    background-color: var(--black);
-}
 
 .arts-item {
     border: 1px solid var(--red);
@@ -146,24 +142,14 @@ main {
 /* My Arts Section ends */
 
 /* Approach Me Section starts */
-.ApproachMe {
-    background-color: var(--red);
-}
 
 .approach-me-icons {
     color: var(--black);
 }
 /* Approach Me Section ends */
 
-footer {
-    background-color: var(--black);
-}
 
 .name-and-designation > h2 {
-    color: var(--red);
-}
-
-.name-and-designation > span {
     color: var(--white);
 }
 
