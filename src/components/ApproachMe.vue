@@ -6,13 +6,13 @@
       class="container flex flex-col items-center justify-center py-16 mx-auto space-y-10"
       id="approachMe"
     >
-      <div class="text-2xl font-bold text-center capitalize sm:text-4xl">
+      <div class="text-2xl font-bold text-center capitalize sm:text-4xl text-myWhite dark:text-myBlack">
         <h1>approach me <span class="underline decoration-wavy underline-offset-4">here</span></h1>
       </div>
 
       <div class="section-content">
         <div
-          class="grid approach-me-methods lg:grid-cols-2 lg:gap-60"
+          class="grid approach-me-methods lg:grid-cols-2 lg:gap-60 text-myWhite dark:text-myBlack"
         >
           <div class="flex items-center space-x-5 call">
             <span class="approach-me-icons">

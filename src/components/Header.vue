@@ -9,11 +9,11 @@ defineProps({
     <button
       id="theme-toggle"
       type="button"
-      class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+      class="text-myGray dark:text-myGray focus:outline-none text-sm p-2.5"
     >
       <svg
         id="theme-toggle-dark-icon"
-        class="hidden w-10 h-10"
+        class="hidden w-8 h-8"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ defineProps({
       </svg>
       <svg
         id="theme-toggle-light-icon"
-        class="hidden w-10 h-10"
+        class="hidden w-8 h-8"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -41,21 +41,20 @@ defineProps({
 
 <script>
 export default {
-//   data() {
-//     //   return {
-//     //     active: null,
-//     //     hidden: true,
-//     //     animate_bar_first: false,
-//     //     animate_bar_last: false,
-//     //    }
-//   },
-
-//   methods: {
-//     // HamburgerMenu() {
-//     //     this.hidden = !this.hidden;
-//     //     this.animate_bar_first = !this.animate_bar_first;
-//     //     this.animate_bar_last = !this.animate_bar_last;
-//     // }
-//   },
+  //   data() {
+  //     //   return {
+  //     //     active: null,
+  //     //     hidden: true,
+  //     //     animate_bar_first: false,
+  //     //     animate_bar_last: false,
+  //     //    }
+  //   },
+  //   methods: {
+  //     // HamburgerMenu() {
+  //     //     this.hidden = !this.hidden;
+  //     //     this.animate_bar_first = !this.animate_bar_first;
+  //     //     this.animate_bar_last = !this.animate_bar_last;
+  //     // }
+  //   },
 };
 </script>
