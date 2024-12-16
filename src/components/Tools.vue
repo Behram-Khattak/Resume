@@ -4,11 +4,11 @@
 
 <template>
   <section class="toolsAndSkills">
-    <div class="text-2xl font-bold text-center capitalize sm:text-4xl">
+    <div class="text-2xl font-bold text-center capitalize sm:text-4xl text-myWhite dark:text-myBlack">
       <h1>Tools i <span class="underline decoration-wavy underline-offset-4">prefer</span></h1>
     </div>
 
-    <div class="grid grid-cols-2 py-16 text-center sm:grid-cols-4">
+    <div class="grid grid-cols-2 py-16 text-center sm:grid-cols-4 text-myWhite dark:text-myBlack">
       <div class="py-4">
         <font-awesome-icon icon="fab fa-laravel" class="text-6xl text-red-600 sm:text-8xl" /><br /><br />
         <span>Laravel</span>

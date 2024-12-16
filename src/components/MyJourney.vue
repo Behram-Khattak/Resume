@@ -6,7 +6,7 @@
       class="container flex flex-col items-center justify-center py-16 mx-auto space-y-5"
       id="myJourney"
     >
-      <div class="text-2xl font-bold text-center capitalize sm:text-4xl">
+      <div class="text-2xl font-bold text-center capitalize sm:text-4xl text-myWhite dark:text-myBlack">
         <h1>my <span class="underline decoration-wavy underline-offset-4">skillful</span> journey</h1>
       </div>
 
@@ -24,7 +24,7 @@
           >
             <li class="me-2" role="presentation">
               <button
-                class="inline-block p-4 border-b-2 rounded-t-lg text-myGray border-myGray hover:text-myWhite hover:border-myWhite focus:text-myWhite focus:border-myWhite"
+                class="inline-block p-4 border-b-2 rounded-t-lg text-myGray border-myGray hover:text-myWhite hover:border-myWhite dark:focus:text-myWhite dark:focus:border-myWhite"
                 id="profile-tab"
                 data-tabs-target="#profile"
                 type="button"
@@ -84,7 +84,7 @@
             role="tabpanel"
             aria-labelledby="profile-tab"
           >
-            <p class="text-xl text-center text-gray-500 dark:text-white">
+            <p class="text-xl text-center text-myGray">
               Started learning Php back in 2019 and still looking for
               implementing new ideas that can speed up the development as well
               as the afterwords website life to the next level. Php is my
@@ -99,7 +99,7 @@
             role="tabpanel"
             aria-labelledby="dashboard-tab"
           >
-            <p class="text-xl text-center text-gray-500 dark:text-white">
+            <p class="text-xl text-center text-myGray">
               Started learning Javascript back in 2019, and still working with
               Frameworks like Vue and React. These frameworks make the
               complicated work so much easy for the developers out there.
@@ -111,7 +111,7 @@
             role="tabpanel"
             aria-labelledby="settings-tab"
           >
-            <p class="text-xl text-center text-gray-500 dark:text-white">
+            <p class="text-xl text-center text-myGray">
               Started learning Frameworks like Laravel, React, and Vue back in
               2021, and still working with these Frameworks creating projects
               like:
@@ -128,7 +128,7 @@
             role="tabpanel"
             aria-labelledby="contacts-tab"
           >
-            <p class="text-xl text-center text-gray-500 dark:text-white">
+            <p class="text-xl text-center text-myGray">
               Started learning Git and Github back in 2020, and using Linux
               Ubuntu from 2021. Linux really sped up my development career. Also
               Recently Started learning how Docker works and looking forward to

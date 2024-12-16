@@ -6,8 +6,6 @@ import AboutMe from "@/components/AboutMe.vue";
 import MyJourney from "@/components/MyJourney.vue";
 import MyArts from "@/components/MyArts.vue";
 import Tools from "@/components/Tools.vue";
-import ComputerGuy from "@/assets/svg/computers_guy_updated.svg";
-import ProfilePic2 from "@/assets/images/picofme (2).png";
 
 import { onMounted } from "vue";
 import { initFlowbite } from "flowbite";
@@ -20,13 +18,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- <header class="fixed top-0 left-0 right-0 z-50">
+  <header class="fixed top-0 left-0 right-0 z-50">
     <Header />
-  </header> -->
+  </header>
 
-  <main class="max-w-screen-lg mx-auto md:px-4">
+  <main class="max-w-screen-lg px-4 mx-auto">
     <!-- who am i -->
-    <WhoAmI></WhoAmI>
+    <WhoAmI />
 
     <!-- about me -->
      <AboutMe />
@@ -45,9 +43,9 @@ onMounted(() => {
     
   </main>
 
-  <!-- <footer>
+  <footer>
     <Footer />
-  </footer> -->
+  </footer>
 </template>
 
 <script>
