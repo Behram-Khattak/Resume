@@ -20,9 +20,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50">
+  <!-- <header class="fixed top-0 left-0 right-0 z-50">
     <Header />
-  </header>
+  </header> -->
 
   <main class="max-w-screen-lg mx-auto md:px-4">
     <!-- who am i -->
